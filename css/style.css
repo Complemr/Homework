@@ -1,0 +1,169 @@
+body {
+	font-size: 14px;
+	font-family: Arial Narrow;
+	padding: 0;
+	overflow-x: hidden;
+	background: white;
+}
+header {
+	border: 1px solid #ccc;/*Без рамки картинка-фон сползает вместе с текстом. ВОПРОС*/
+	height: 800px;
+	text-align: center;
+	background: #afd671;
+	background-image: url(../img/bghead.jpg);
+}
+h1 {
+	font-size: 26px;
+}
+p,
+q {
+	font-size: 16px;
+	color: #888;
+}
+ul {
+	line-height: 20px;
+	margin: 0 10px;
+	display: inline-block;
+	list-style-type: none;
+}
+li {
+	color: #888888;
+}
+li:hover {
+	color: red;
+}
+.epigraph {
+	font-size: 60px;
+	font-family: Century Gothic;
+	margin-top: 280px;
+}
+.play {
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	margin: 40px auto;
+	background: #8386a1;
+}
+.provocation {
+	height: 33px;
+	width: 190px;
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 17px;
+	margin: 10px auto;
+	color: white;
+	background: #e16d6d;
+}
+.footnote {
+	letter-spacing: 1px;
+	margin: 0 auto;
+}
+.footnote:before {
+	content: "*";
+	font-size: 18px;
+	letter-spacing: 6px;
+}
+.square {
+	height: 500px;
+	width: 100%;
+	transform: rotate(-40deg);
+	position: absolute;
+	right: -59%;
+	background: red;
+	z-index: -1000;
+}
+.left {
+	width: 40%;
+	word-wrap: break word;
+	padding: 10%;
+}
+.footnote2 {
+	text-transform: uppercase;
+	color: red;
+}
+.epigraph2 {
+	font-size: 40px;
+	margin: 0;
+}
+.tr3,
+.clients {
+	text-align: center;
+	padding: 8% 8% 0;
+	background: #f6f5f3;
+}
+.group,
+.client {
+	width: 20%;
+	margin: 6%;
+	display: inline-block;
+}
+.clients {
+	padding: 1%;
+	background: #222329;
+}
+.foto {
+	height: 50px;
+	width: 50px;
+	margin: 10px auto;
+	background: #4f4f5e;
+}
+.name {
+	font-size: 22px;
+	color: white;
+}
+.position {
+	color: #e16c6c;
+}
+.logos {
+	border: 2px solid green;
+	height: 100px;
+	width: 80%;
+	font-size: 60px;
+	text-transform: uppercase;
+	margin: 0 auto;
+	color: #ccc;
+}
+.browser {
+	text-align: center;
+	padding: 5%;
+	background: #f5f5f3;
+}
+.browser p {
+	width: 30%;
+	margin: 20px auto 0;
+}
+.try_now {
+	text-align: center;
+	padding: 5%;
+	color: white;
+	background: #373c67;
+}
+input[type="text"] {
+	height: 20px;
+	margin: 5px 10px;
+}
+.button {
+	height: 20px;
+	width: 10%;
+	text-transform: uppercase;
+	padding-top: 5px;
+	display: inline-block;
+	color: white;
+	background: #e16d6d;
+}
+.logo,
+.nav {
+	display: inline-block;
+}
+.footer {
+	text-align: center;
+	padding: 5%;
+}
+.logo {
+	width: 15%;
+	text-align: left;
+}
+.subsicribe {
+	display: inline-block;
+	margin-left: 10px;
+}
