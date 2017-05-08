@@ -5,6 +5,7 @@ body {
 	overflow-x: hidden;
 	background: white;
 }
+
 header {
 	border: 1px solid #ccc;/*Без рамки картинка-фон сползает вместе с текстом. ВОПРОС*/
 	height: 800px;
@@ -12,38 +13,51 @@ header {
 	background: #afd671;
 	background-image: url(../img/bghead.jpg);
 }
+
 h1 {
 	font-size: 26px;
 }
+
 p,
 q {
 	font-size: 16px;
 	color: #888;
 }
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
 ul {
 	line-height: 20px;
 	margin: 0 10px;
 	display: inline-block;
 	list-style-type: none;
 }
+
 li {
 	color: #888888;
 }
 li:hover {
 	color: red;
 }
+
 .epigraph {
 	font-size: 60px;
 	font-family: Century Gothic;
 	margin-top: 280px;
 }
+
 .play {
 	border-radius: 50%;
-	height: 50px;
+	height: 35px;
 	width: 50px;
+	padding: 15px 0 0 3px;
 	margin: 40px auto;
 	background: #8386a1;
 }
+
 .provocation {
 	height: 33px;
 	width: 190px;
@@ -54,116 +68,244 @@ li:hover {
 	color: white;
 	background: #e16d6d;
 }
+
 .footnote {
 	letter-spacing: 1px;
 	margin: 0 auto;
 }
+
 .footnote:before {
 	content: "*";
 	font-size: 18px;
 	letter-spacing: 6px;
 }
-.square {
+
+[class*="square"] {
 	height: 500px;
 	width: 100%;
-	transform: rotate(-40deg);
 	position: absolute;
-	right: -59%;
 	background: red;
 	z-index: -1000;
 }
+.square1 {
+	right: -59%;
+	transform: rotate(-40deg);
+}
+.square2 {
+	left: -55%;
+	transform: rotate(40deg);
+}
+.square3 {
+	height: 250px;
+	width: 30%;
+	right: -12%;
+	transform: rotate(50deg);
+}
+
 .left {
 	width: 40%;
 	word-wrap: break word;
 	padding: 10%;
 }
+
 .footnote2 {
 	text-transform: uppercase;
 	color: red;
 }
+
 .epigraph2 {
 	font-size: 40px;
 	margin: 0;
 }
+
 .tr3,
 .clients {
 	text-align: center;
 	padding: 8% 8% 0;
+	position: relative;
 	background: #f6f5f3;
 }
+
+.tr3 {
+	height: 600px;
+}
+
+[src*="PenHolder.png"] {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+[src*="Earphones.png"] {
+	position: absolute;
+	top: -10px;
+	right: 0;
+}
+
+[src*="CoffeeCup.png"] {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
 .group,
 .client {
 	width: 20%;
 	margin: 6%;
 	display: inline-block;
 }
+
+.description {
+	padding: 5%;
+}
+
+[src*="macbook.png"] {
+	float: left;
+	margin: 0 50px;
+}
+
+.MacBook {
+	padding: 10% 10% 5%;
+}
+
 .clients {
 	padding: 1%;
 	background: #222329;
 }
+
 .foto {
 	height: 50px;
 	width: 50px;
 	margin: 10px auto;
 	background: #4f4f5e;
 }
+
 .name {
 	font-size: 22px;
 	color: white;
 }
+
 .position {
 	color: #e16c6c;
 }
+
 .logos {
-	border: 2px solid green;
-	height: 100px;
 	width: 80%;
 	font-size: 60px;
 	text-transform: uppercase;
 	margin: 0 auto;
 	color: #ccc;
 }
+
 .browser {
 	text-align: center;
-	padding: 5%;
+	padding: 5% 5% 0;
 	background: #f5f5f3;
 }
+
 .browser p {
 	width: 30%;
 	margin: 20px auto 0;
 }
+
 .try_now {
+	position: relative;
 	text-align: center;
 	padding: 5%;
 	color: white;
 	background: #373c67;
 }
-input[type="text"] {
-	height: 20px;
-	margin: 5px 10px;
+
+[src*="window.png"] {
+	margin-top: 100px;
 }
+
+.try_now form {
+	margin-top: 50px;
+}
+
+.try_now [type="text"] {
+	border: 1px solid #9b9eb3;
+	border-radius: 2px;
+	height: 30px;
+	padding: 0 10px;
+	margin: 0 10px;
+	color: #f5f5f3;
+	background: #4a4f75;	
+}
+
 .button {
-	height: 20px;
+	border-radius: 2px;
+	height: 23px;
 	width: 10%;
 	text-transform: uppercase;
-	padding-top: 5px;
+	padding-top: 10px;
 	display: inline-block;
 	color: white;
 	background: #e16d6d;
 }
+.button:hover {
+	border: 1px solid #9b9eb3;
+	background: inherit;
+}
+
+.button a:active {
+	color: red;
+}
+
+.row {
+	display: inline-block;
+	visibility: visible;
+	padding: 10px;
+	color: #9b9eb3;
+}
+.row:before { content: "<===|"; }
+
+.desc {
+	margin-top: 30px;
+	color: #b8b8c2;
+}
+
+.desc a {
+	text-decoration: underline;
+	color: #b8b8c2;
+}
+
 .logo,
 .nav {
 	display: inline-block;
 }
+
 .footer {
 	text-align: center;
 	padding: 5%;
 }
+
 .logo {
 	width: 15%;
 	text-align: left;
 }
+
 .subsicribe {
 	display: inline-block;
 	margin-left: 10px;
+}
+.subsicribe [type="text"] {
+	height: 20px;
+	padding: 5px;
+	margin: 0 5px;
+}
+
+
+.btn {
+	display: inline-block;
+	border-radius: 2px;
+	padding: 5px;
+	background: #e16d6d;
+}
+
+.socials {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 20px;
 }
