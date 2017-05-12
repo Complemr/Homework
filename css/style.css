@@ -1,4 +1,11 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
+	min-width: 800px;
+	max-width: 1600px;
+	width: 100%;
 	font-size: 14px;
 	font-family: Arial Narrow;
 	padding: 0;
@@ -11,7 +18,7 @@ header {
 	height: 800px;
 	text-align: center;
 	background: #afd671;
-	background-image: url(../img/bghead.jpg);
+	background-image: url("../img/bghead.jpg");
 }
 
 h1 {
@@ -31,8 +38,8 @@ a {
 
 ul {
 	line-height: 20px;
-	margin: 0 10px;
-	display: inline-block;
+	padding: 0;
+	margin: 0;
 	list-style-type: none;
 }
 
@@ -51,19 +58,17 @@ li:hover {
 
 .play {
 	border-radius: 50%;
-	height: 35px;
 	width: 50px;
-	padding: 15px 0 0 3px;
+	padding: 15px 12px 12px 15px;
 	margin: 40px auto;
 	background: #8386a1;
 }
 
 .provocation {
-	height: 33px;
 	width: 190px;
 	text-align: center;
 	text-transform: uppercase;
-	padding-top: 17px;
+	padding: 10px;
 	margin: 10px auto;
 	color: white;
 	background: #e16d6d;
@@ -103,9 +108,9 @@ li:hover {
 }
 
 .left {
-	width: 40%;
+	width: 60%;
 	word-wrap: break word;
-	padding: 10%;
+	padding: 7% 10%;
 }
 
 .footnote2 {
@@ -236,10 +241,9 @@ li:hover {
 
 .button {
 	border-radius: 2px;
-	height: 23px;
 	width: 10%;
 	text-transform: uppercase;
-	padding-top: 10px;
+	padding: 10px;
 	display: inline-block;
 	color: white;
 	background: #e16d6d;
@@ -271,27 +275,34 @@ li:hover {
 	color: #b8b8c2;
 }
 
-.logo,
-.nav {
-	display: inline-block;
-}
-
 .footer {
 	text-align: center;
+	display: flex;
+	justify-content: space-around;
 	padding: 5%;
 }
 
 .logo {
-	width: 15%;
+	border-right: 1px solid black;
+	width: 25%;
+	padding: 0 5%;
 	text-align: left;
 }
 
-.subsicribe {
-	display: inline-block;
-	margin-left: 10px;
+.nav {
+	width: 20%;
+	display: flex;
+	justify-content: space-between;
 }
+
+.subsicribe {
+	border-left: 1px solid black;
+	width: 30%;
+	padding: 0 5%;
+}
+
 .subsicribe [type="text"] {
-	height: 20px;
+	height: 30px;
 	padding: 5px;
 	margin: 0 5px;
 }
